@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout style="@style/BB_BottomBarItem_Shifting" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.AppCompatImageView android:alpha="0.6" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bb_bottom_bar_icon"/>
+
+    <!-- We use this empty space to push the text to the bottom -->
+
+
+    <android.support.v4.widget.Space android:layout_height="0dp" android:layout_width="0dp" android:layout_weight="1"/>
+
+    <TextView style="@style/BB_BottomBarItem_TitleStyle" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bb_bottom_bar_title" android:textAppearance="@style/BB_BottomBarItem_Shifting.TitleAppearance"/>
+
+</LinearLayout>

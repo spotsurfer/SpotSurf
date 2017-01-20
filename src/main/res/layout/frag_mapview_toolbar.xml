@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bam.spotsurf.fragnav.CustomAutoCompleteTextView
+        android:id="@+id/search_text"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="SpotSurf"
+        android:textColorHint="@color/grey"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:drawableStart="@drawable/search"
+        android:drawableTint="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/filter_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:tint="@color/grey"
+        android:src="@drawable/ic_filter" />
+
+
+</LinearLayout>

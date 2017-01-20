@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_text">
+    </com.google.android.gms.maps.MapView>
+
+
+
+    <com.bam.spotsurf.fragnav.CustomAutoCompleteTextView
+            android:id="@+id/search_text"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:hint="SpotSurf"
+            android:textColorHint="@color/grey"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/search"
+            android:drawableTint="@color/white"
+            android:layout_alignParentStart="true"
+            />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:tint="@color/grey"
+            android:layout_toEndOf="@+id/search_text"
+            android:src="@drawable/ic_list" />
+
+
+
+
+
+   <hollowsoft.slidingdrawer.SlidingDrawer
+       android:id="@+id/drawer"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:layout_below="@id/search_text"
+       android:rotation="180"
+       drawer:handle="@+id/handle"
+       drawer:content="@+id/content">
+
+       <ImageView
+           android:id="@+id/handle"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:src="@drawable/ic_filter"
+           android:gravity="center"
+           android:background="@color/white"
+           android:rotation="180"
+           android:tint="@color/blue"
+           />
+
+       <include
+           android:id="@id/content"
+           layout="@layout/filter_content" />
+
+
+   </hollowsoft.slidingdrawer.SlidingDrawer>
+
+    <!--
+
+   <hollowsoft.slidingdrawer.SlidingDrawer
+       android:id="@+id/spotdrawer"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       drawer:handle="@+id/spothandle"
+       drawer:content="@+id/spotcontent">
+
+       <TextView
+           android:id="@+id/spothandle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:gravity="center"
+           />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@android:color/darker_gray"/>
+
+       <TextView
+           android:id="@+id/spotcontent"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/white"
+           android:gravity="center"
+           android:text="Spot Info" />
+
+
+
+   </hollowsoft.slidingdrawer.SlidingDrawer>-->
+
+
+
+</RelativeLayout>
+

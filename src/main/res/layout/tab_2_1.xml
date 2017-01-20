@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView android:fitsSystemWindows="true" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingRight="24dp" android:paddingLeft="24dp" android:paddingTop="56dp" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true">
+
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="Availability" android:textSize="30dip" android:gravity="center"/>
+
+
+        <Button android:layout_height="wrap_content" android:layout_width="fill_parent"  android:id="@+id/event_cal_button" android:text="See Calendar" android:textSize="16dip" android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="Start Date:" android:textSize="20dip" android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etxt_startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="20dp"
+                android:hint="Start Date"
+                />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="End Date:" android:textSize="20dip" android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etxt_enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginLeft="20dp"
+            android:hint="End Date"
+            />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="Start Time:" android:textSize="20dip" android:gravity="center"/>
+
+            <!--
+            <EditText
+                android:id="@+id/etxt_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="20dp"
+                android:hint="Start Time"
+                />
+            -->
+            <Spinner
+                android:id="@+id/spinner_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="End Time:" android:textSize="20dip" android:gravity="center"/>
+
+
+            <!--
+            <EditText
+                android:id="@+id/etxt_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="20dp"
+                android:hint="End Time"
+                />
+              -->
+
+            <Spinner
+                android:id="@+id/spinner_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+        </LinearLayout>
+
+
+
+        <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="15dp" android:id="@+id/link_pricing" android:text="Pricing ->" android:textSize="16dip" android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

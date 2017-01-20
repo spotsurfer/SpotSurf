@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <FrameLayout style="@style/BB_BottomBarItem_Fixed" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.AppCompatImageView android:layout_gravity="top|center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:paddingTop="8dp" android:id="@+id/bb_bottom_bar_icon"/>
+
+    <TextView style="@style/BB_BottomBarItem_TitleStyle" android:layout_gravity="bottom|center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/bb_bottom_bar_title" android:textAppearance="@style/BB_BottomBarItem_Fixed.TitleAppearance"/>
+
+</FrameLayout>

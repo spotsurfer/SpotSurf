@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:id="@+id/bb_menu_spotsurf"
+        android:enabled="true"
+        android:icon="@drawable/surf"
+        android:title="SpotSurf"
+        />
+    <item
+        android:id="@+id/bb_menu_spotlord"
+        android:enabled="true"
+        android:icon="@drawable/marker"
+        android:title="SpotLord"
+       />
+    <item
+        android:id="@+id/bb_menu_myspots"
+        android:enabled="true"
+        android:icon="@drawable/garage"
+        android:title="My Spots"
+        />
+
+    <item
+        android:id="@+id/bb_menu_settings"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        />
+
+
+</menu>

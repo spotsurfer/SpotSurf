@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ScrollView android:id="@+id/container0" android:fitsSystemWindows="true" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingRight="24dp" android:paddingLeft="24dp" android:paddingTop="56dp" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true">
+
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="List your Spot" android:textSize="30dip" android:gravity="center"/>
+
+        <com.bam.spotsurf.fragnav.CustomAutoCompleteTextView
+            android:id="@+id/input_address"
+            android:inputType="textPostalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Car Size: " android:textSize="20dip" android:gravity="center"/>
+
+        <RadioGroup android:id="@+id/radioGroup1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true" android:layout_marginBottom="5dp" >
+
+            <RadioButton android:id="@+id/compact_size" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:checked="true" android:text="Compact Only" />
+
+            <RadioButton android:id="@+id/all_size" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="All" />
+
+        </RadioGroup>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="Spot Type: " android:textSize="20dip" android:gravity="center"/>
+
+        <RadioGroup android:id="@+id/radioGroup2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true"  >
+
+
+            <RadioButton android:id="@+id/driveway" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Driveway" />
+
+            <RadioButton android:id="@+id/garage" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Garage" />
+
+        </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="Garage Code" android:inputType="phone" android:id="@+id/garage_code"  />
+
+        <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="24dp" android:id="@+id/avail_button" android:text="Availability ->" android:textSize="16dip" android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+

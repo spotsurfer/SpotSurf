@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:fitsSystemWindows="true" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingRight="24dp" android:paddingLeft="24dp" android:paddingTop="56dp" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true">
+
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="Spot Summary/Confirmation" android:textSize="30dip" android:gravity="center"/>
+
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/etxt_summary" android:editable="false"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="15dp" android:id="@+id/link_post_spot" android:text="Post Spot" android:textSize="16dip" android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

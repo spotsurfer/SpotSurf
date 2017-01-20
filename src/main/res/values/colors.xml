@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue_filling">#e0e0ff</color>
+    <color name="blue_outline">#6060ff</color>
+    <color name="darker_grey">#404040</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="grey_options_group">#a0a0a0</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="selected">#FAEFAA</color>
+    <color name="orange">#ffff8800</color>
+    <color name="light_orange">#ffe27d18</color>
+    <color name="list_text_color">#1b1b1b</color>
+    <color name="transparent">#00000000</color>
+    <color name="menu_bar_separator_color">#656565</color>
+    <color name="menu_bar_item_text">#e4e2e3</color>
+    <color name="menu_bar_header_text">#8c8b8b</color>
+    <color name="top_bar_color">#D9222222</color>
+    <color name="navigate_blue_button">#0080ff</color>
+    <color name="blue">#0000ff</color>
+    <color name="yellow">#fbf000</color>
+    <color name="green">#00ff00</color>
+    <color name="ColorPrimary">#e62117</color>
+    <color name="ColorPrimaryDark">#c31c13</color>
+    <color name="tabsScrollColor">#8a140e</color>
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white_87">#DEFFFFFF</color>
+    <color name="white_54">#8AFFFFFF</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796b</color>
+    <color name="colorAccent">#00bfa5</color>
+    <color name="bb_inActiveBottomBarItemColor">#747474</color>
+    <color name="bb_darkBackgroundColor">#212121</color>
+    <color name="bb_tabletRightBorderDark">#505050</color>
+
+
+</resources>

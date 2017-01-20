@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:fitsSystemWindows="true" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:paddingRight="24dp" android:paddingLeft="24dp" android:paddingTop="56dp" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true">
+
+        
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="24dp" android:text="Pricing" android:textSize="30dip" android:gravity="center"/>
+
+
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Our Recommended Price:" android:textSize="20dip" android:gravity="center"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/etxt_recommended_price" android:editable="false"/>
+
+
+        <RadioGroup android:id="@+id/radioGroup1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true" android:layout_marginBottom="5dp" >
+
+            <RadioButton android:id="@+id/recommended_price" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:checked="true" android:text="Our Price" />
+
+            <RadioButton android:id="@+id/own_price" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Your Price" />
+
+        </RadioGroup>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="number" android:layout_marginTop="20dp" android:hint="Choose your own price" android:id="@+id/etxt_own_price"  />
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/etxt_rate" android:editable="false"/>
+
+        </LinearLayout>
+
+        <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="15dp" android:id="@+id/link_summary" android:text="Summary/Confirmation ->" android:textSize="16dip" android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

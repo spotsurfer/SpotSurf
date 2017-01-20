@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/white" android:rotation="180">
+
+<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginLeft="10dp" android:orientation="vertical"   android:focusable="true" android:focusableInTouchMode="true">
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"  android:orientation="horizontal">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="Start Date:" android:textSize="10dip" android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/etxt_startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginLeft="10dp"
+                android:hint="Start Date"
+                />
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:layout_marginLeft="30dp" android:text="Start Time:" android:textSize="10dip" android:gravity="center"/>
+
+            <Spinner
+                android:id="@+id/spinner_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_title" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"  android:orientation="horizontal" >
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="End Date:" android:textSize="10dip" android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/etxt_enddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:layout_marginLeft="11dp"
+            android:hint="End Date"
+            />
+
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"   android:layout_marginLeft="30dp" android:text="End Time:" android:textSize="10dip" android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/spinner_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" android:layout_marginTop="15dp">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Car Size: " android:textSize="10dip" android:gravity="center"/>
+
+            <RadioGroup android:id="@+id/radioGroup1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true" android:layout_marginBottom="5dp" >
+
+                <RadioButton android:id="@+id/compact_size" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:checked="true" android:text="Compact Only" />
+
+                <RadioButton android:id="@+id/all_size" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="All" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" android:layout_marginTop="15dp">
+
+            <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="Spot Type: " android:textSize="10dip" android:gravity="center"/>
+
+            <RadioGroup android:id="@+id/radioGroup2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_alignParentLeft="true"  >
+
+
+                <RadioButton android:id="@+id/driveway" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Driveway" />
+
+                <RadioButton android:id="@+id/garage" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Garage" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

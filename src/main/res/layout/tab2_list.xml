@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fitsSystemWindows="true" android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="15dp" android:id="@+id/post_new" android:text="Post New Spot" android:textSize="16dip" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="Current Listings" android:textSize="20dip" android:gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:id="@+id/current_list">
+        
+    </ListView>
+    
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"  android:text="Past Listings" android:textSize="20dip"  android:gravity="center"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:id="@+id/past_list">
+
+    </ListView>
+
+</LinearLayout>
+
+</ScrollView>

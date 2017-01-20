@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <FrameLayout android:paddingBottom="16dp" android:paddingTop="16dp" android:paddingRight="20dp" android:paddingLeft="20dp" android:layout_height="wrap_content" android:layout_width="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.AppCompatImageView style="@style/BB_BottomBarItem_Tablet" android:id="@+id/bb_bottom_bar_icon"/>
+
+</FrameLayout>
